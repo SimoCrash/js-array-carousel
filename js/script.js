@@ -9,7 +9,7 @@ const arrImg = [
 const sliderImg = document.querySelector(".container");
 const btnTop = document.querySelector(".btn-top");
 const btnBottom = document.querySelector(".btn-bottom");
-const firstImg = 0;
+
 
 for (let i = 0; i < arrImg.length; i++) {
     const eleImg = document.createElement("img");
@@ -21,3 +21,18 @@ for (let i = 0; i < arrImg.length; i++) {
     }
     sliderImg.append(eleImg);
 }
+
+const listImg = document.querySelector(".slider-img");
+let firstImg = 0;
+
+btnTop.addEventListener("click", function(){
+    listImg[firstImg].classList.remove("d-block");
+    firstImg++;
+    listImg[firstImg].classList.add("d-block");
+})
+
+btnBottom.addEventListener("click", function(){
+    listImg[firstImg].classList.remove("d-block");
+    firstImg--;
+    listImg[firstImg].classList.add("d-block");
+})
