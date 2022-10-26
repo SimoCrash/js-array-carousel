@@ -20,6 +20,7 @@ body {
 
 .slider-img {
     width: 100%;
+    display: none;
 }
 
 .controls {
@@ -43,10 +44,6 @@ body {
 
 .btn-top:hover, .btn-bottom:hover {
     cursor: pointer;
-}
-
-.d-none {
-    display: none;
 }
 
 .d-block {
