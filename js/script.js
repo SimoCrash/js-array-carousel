@@ -23,24 +23,29 @@ for (let i = 0; i < arrImg.length; i++) {
 }
 
 const listImg = document.querySelectorAll(".slider-img");
+const smallImage = document.querySelectorAll(".small-img");
 let firstImg = 0;
 
-btnTop.addEventListener("click", function(){
+btnBottom.addEventListener("click", function(){
     listImg[firstImg].classList.remove("d-block");
+    smallImage[firstImg].classList.remove("real-img");
     firstImg++;
     if (firstImg == 5) {
         firstImg = 0;
     }
     listImg[firstImg].classList.add("d-block");
+    smallImage[firstImg].classList.add("real-img");
 })
 
-btnBottom.addEventListener("click", function(){
+btnTop.addEventListener("click", function(){
     listImg[firstImg].classList.remove("d-block");
+    smallImage[firstImg].classList.remove("real-img");
     firstImg--;
     if (firstImg == -1) {
         firstImg = 4;
     }
     listImg[firstImg].classList.add("d-block");
+    smallImage[firstImg].classList.add("real-img");
 })
 
 

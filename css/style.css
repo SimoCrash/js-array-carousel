@@ -13,9 +13,9 @@ body {
 
 .container {
     position: relative;
-    width: 60%;
+    width: 70%;
     height: 80%;
-    max-width: 600px;
+    max-width: 800px;
     max-height: 400px;
     margin: auto;
     background-color: white;
@@ -29,14 +29,16 @@ body {
     object-position: center;
 }
 
-.controls {
+.controls, .container-s-image {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    inset: 0;
-    margin: 0.5rem;
+    top: 0;
+    right: -150px;
+    bottom: 0;
+    width: 150px;
 }
 
 .btn-top, .btn-bottom {
@@ -56,4 +58,27 @@ body {
     display: block;
 }
 
+.small-img {
+    width: 100%;
+    height: 20%;
+    opacity: 0.3;
+}
+/* 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    bottom: 0;
+    width: 150px;
+} */
+
+.real-img {
+    opacity: 1;
+    border: 1px solid white;
+    border-left: none;
+}
 
