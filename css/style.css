@@ -14,13 +14,19 @@ body {
 .container {
     position: relative;
     width: 60%;
+    height: 80%;
     max-width: 600px;
+    max-height: 400px;
     margin: auto;
+    background-color: white;
 }
 
 .slider-img {
+    height: 100%;
     width: 100%;
     display: none;
+    object-fit: cover;
+    object-position: center;
 }
 
 .controls {

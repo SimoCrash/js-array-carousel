@@ -22,17 +22,43 @@ for (let i = 0; i < arrImg.length; i++) {
     sliderImg.append(eleImg);
 }
 
-let listImg = document.querySelector(".slider-img");
+const listImg = document.querySelectorAll(".slider-img");
 let firstImg = 0;
 
 btnTop.addEventListener("click", function(){
     listImg[firstImg].classList.remove("d-block");
     firstImg++;
+    if (firstImg == 5) {
+        firstImg = 0;
+    }
     listImg[firstImg].classList.add("d-block");
 })
 
 btnBottom.addEventListener("click", function(){
     listImg[firstImg].classList.remove("d-block");
     firstImg--;
+    if (firstImg == -1) {
+        firstImg = 4;
+    }
     listImg[firstImg].classList.add("d-block");
 })
+
+
+
+
+
+
+
+
+
+
+// codice vecchio
+// btnTop.addEventListener("click", function(){
+//     listImg[firstImg].classList.remove("d-block");
+//     firstImg++;
+//     listImg[firstImg].classList.add("d-block");
+//     if (firstImg == 4) {
+//         firstImg = 0;
+//         listImg[firstImg].classList.add("d-block");
+//     }
+// })
