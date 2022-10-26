@@ -22,7 +22,7 @@ for (let i = 0; i < arrImg.length; i++) {
     sliderImg.append(eleImg);
 }
 
-const listImg = document.querySelector(".slider-img");
+let listImg = document.querySelector(".slider-img");
 let firstImg = 0;
 
 btnTop.addEventListener("click", function(){
